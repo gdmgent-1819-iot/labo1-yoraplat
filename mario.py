@@ -5,7 +5,7 @@ sense = SenseHat()
 S = [255, 204, 102]  # Skin
 B = [0, 120, 255]    # Blue
 R = [255,0 ,0]       # Red
-O = [0, 0, 0]  # White
+O = [0, 0, 0]        # White
 
 
 mario = [
@@ -34,7 +34,7 @@ sense.clear()
 sense.set_pixels(mario)
 
 
-while True:
+while True: # Always true == infinite loop
     event = sense.stick.wait_for_event()
     if event.direction == 'up' and event.action == "pressed":
        sense.clear()
